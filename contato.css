@@ -1,0 +1,125 @@
+/* Reset básico para garantir consistência entre navegadores */
+
+contato.css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Fundo claro e neutro */
+}
+
+header {
+    background-color: #007bff; /* Azul vibrante para o cabeçalho */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px; /* Aumentado para melhor espaçamento */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px; /* Adicionado padding para uma melhor área de clique */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #0056b3; /* Azul mais escuro para o hover */
+    border-radius: 5px; /* Bordas arredondadas para o efeito hover */
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto; /* Adicionado margin para espaçamento vertical */
+    background-color: #fff; /* Fundo branco para o conteúdo */
+    border-radius: 8px; /* Bordas arredondadas para o conteúdo */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1, h2 {
+    color: #007bff; /* Azul vibrante para títulos */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Borda mais clara */
+    border-radius: 5px; /* Bordas arredondadas para os campos */
+    font-size: 16px; /* Fonte maior para melhor legibilidade */
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Azul vibrante para o botão */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold; /* Fonte em negrito para destacar o botão */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Azul mais escuro para o hover */
+}
+
+.voltar-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #28a745; /* Verde para o botão */
+    text-decoration: none;
+    border-radius: 5px; /* Bordas arredondadas para o botão */
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s; /* Transição suave para o hover */
+}
+
+.voltar-home:hover {
+    background-color: #218838; /* Verde mais escuro para o hover */
+}
+
+footer {
+    background-color: #007bff; /* Azul vibrante para o rodapé */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

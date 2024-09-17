@@ -1,0 +1,156 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ceffff;
+    background-image: url("Img-fotos/pexels-sunny-1340583261-28462079.jpg");
+    background-repeat: repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover; /* Ajuste do tamanho da imagem de fundo */
+    min-height: 100vh; /* Garantir que o corpo ocupe a altura total da janela */
+    color: #333; /* Cor do texto padrão */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+nav {
+    position: fixed; /* Fixa o menu no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo do menu com maior opacidade */
+    border-bottom: 1px solid #ccc; /* Linha de separação opcional */
+    padding: 10px 0; /* Espaçamento interno */
+    z-index: 1000; /* Garante que o nav esteja acima do conteúdo */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+nav a {
+    color: #000; /* Cor do texto do menu */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Sombra para melhorar a legibilidade */
+}
+
+header {
+    width: 960px; /* Largura padrão do cabeçalho */
+    height: 250px; /* Altura padrão do cabeçalho */
+    background-color: rgba(155, 255, 217, 0.8); /* Ajusta a transparência do fundo */
+    margin-top: 60px; /* Espaço suficiente para o menu fixo */
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgba(68, 88, 80, 0.6);
+    background-size: cover; /* Ajusta a imagem para cobrir o elemento */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url("Img-fotos/WhatsApp Image 2024-09-17 at 14.21.40 (1).jpeg");
+    }
+    25% {
+        background-image: url("Img-fotos/WhatsApp Image 2024-09-17 at 14.21.40 (2).jpeg");
+    }
+    50% {
+        background-image: url("Img-fotos/WhatsApp Image 2024-09-17 at 15.11.48.jpeg");
+    }
+    75% {
+        background-image: url("Img-fotos/WhatsApp Image 2024-09-17 at 15.14.02.jpeg");
+    }
+    100% {
+        background-image: url("Img-fotos/WhatsApp Image 2024-09-17 at 15.18.03.jpeg");
+    }
+}
+
+main {
+    flex: 1; /* Permite que o main expanda para preencher o espaço disponível */
+    width: 100%;
+    max-width: 1200px; /* Largura máxima do conteúdo principal */
+    padding: 20px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo branca com opacidade para contraste */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    color: #333; /* Cor do texto no rodapé */
+}
+
+footer p {
+    margin: 0;
+    color: #333; /* Garante que o texto seja visível */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Sombra para melhorar a legibilidade */
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a linha seguinte */
+    gap: 10px; /* Espaçamento entre as imagens */
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    width: calc(33.333% - 10px); /* Ajusta a largura das imagens com um espaço entre elas */
+    border-radius: 8px; /* Adiciona bordas arredondadas às imagens */
+}
+
+section {
+    margin: 20px 0; /* Espaçamento ao redor da seção do vídeo */
+    display: flex;
+    justify-content: center; /* Centraliza o vídeo horizontalmente */
+}
+
+iframe {
+    width: 100%;
+    max-width: 800px; /* Largura máxima do vídeo */
+    height: 450px; /* Altura do vídeo */
+    border: none; /* Remove a borda padrão do iframe */
+    border-radius: 8px; /* Bordas arredondadas para o vídeo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar o vídeo */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding-top: 56.25%; /* Proporção 16:9 */
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
